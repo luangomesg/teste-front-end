@@ -1,0 +1,116 @@
+@use "../../styles/variables.scss" as *;
+
+.main {
+  width: 100%;
+}
+
+.hero {
+  width: 100%;
+  height: 390px;
+  background-image:
+    linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)),
+    url("../../assets/images/HeroBanner.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: 966px;
+  height: 390px;
+  h1 {
+    font-weight: 600;
+    font: semibbol;
+    font-size: 48px;
+    line-height: 50px;
+    color: $white;
+    width: 822px;
+    height: 128px;
+    margin-top: 78px;
+    margin-left: 81px;
+  }
+
+  p {
+    font-weight: 700;
+    font-size: 32px;
+    color: $yellow;
+    margin-left: 81px;
+
+    span {
+      font-weight: 400;
+      color: $white;
+    }
+  }
+
+  button {
+    border-radius: 5px;
+    background-color: $yellow;
+    padding: 13px 54.5px;
+    font-weight: 600;
+    font-size: 16px;
+    color: $purple;
+    border: none;
+    margin-left: 87px;
+    margin-top: 41px;
+
+    span {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 97px;
+      height: 24px;
+    }
+  }
+}
+
+.categories {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  margin-top: 39px;
+}
+
+.categories-content {
+  display: flex;
+  list-style-type: none;
+  gap: 42px;
+
+  li {
+    text-align: center;
+    cursor: pointer;
+
+    div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 128px;
+      height: 128px;
+      box-shadow: 0px 4px 11px 0px rgba(0, 0, 0, 0.13);
+      border-radius: 10px;
+      margin-bottom: 21px;
+
+      img {
+        width: 61px;
+        height: 61px;
+      }
+    }
+
+    .category-marked {
+      box-shadow: 0px 2px 9px 0px rgba(0, 0, 0, 0.22);
+    }
+
+    h2 {
+      font-weight: 500;
+      font-size: 14px;
+    }
+
+    span {
+      font-weight: 600;
+      color: $blue;
+    }
+  }
+}
