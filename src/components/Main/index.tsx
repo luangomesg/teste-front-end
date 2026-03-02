@@ -6,6 +6,7 @@ import toolsIcon from "../../assets/icons/ferramentas 1.svg";
 import healthIcon from "../../assets/icons/cuidados-de-saude 1.svg";
 import sportIcon from "../../assets/icons/corrida 1.svg";
 import fashionIcon from "../../assets/icons/moda 1.svg";
+import ProductsCarousel from "../ProductsCarousel";
 export function Main() {
   return (
     <main className="main">
@@ -70,6 +71,23 @@ export function Main() {
           </li>
         </ul>
       </section>
+
+      <section className="products">
+        <h2 className="products_title">Produtos relacionados</h2>
+
+        <div className="products_tabs">
+          <button className="active">Celular</button>
+          <button>Acessórios</button>
+          <button>Tablets</button>
+          <button>Notebooks</button>
+          <button>TVs</button>
+          <button>Ver todos</button>
+        </div>
+
+        <ProductsCarousel />
+      </section>
+
+      <section className="Partners"></section>
     </main>
   );
 }

@@ -1,0 +1,129 @@
+@use "../../styles/variables.scss" as *;
+
+.products_wrapper {
+  display: flex;
+  align-items: center;
+  margin-top: 24px;
+
+  .carousel_viewport {
+    overflow: hidden;
+    width: 1268px;
+  }
+
+  .arrow_left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    background-color: transparent;
+    border: none;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    margin-right: 15px;
+
+    img {
+      width: 7.47px;
+      height: 12.8px;
+    }
+  }
+
+  .arrow_right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    background-color: transparent;
+    border: none;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    margin-left: 15px;
+
+    img {
+      width: 7.47px;
+      height: 12.8px;
+    }
+  }
+
+  .products_track {
+    display: flex;
+    margin-bottom: 10px;
+    gap: 18px;
+    transition: transform 0.4s ease-in-out;
+
+    .product_card {
+      display: flex;
+      width: 304px;
+      height: 100%;
+      border-radius: 10px;
+      flex-direction: column;
+      align-items: start;
+      box-shadow: 0px 3px 19px 0px rgba(0, 0, 0, 0.22);
+      padding: 16px 12px;
+
+      .test {
+        width: 278.1px;
+        margin-top: 17px;
+      }
+
+      img {
+        width: 278px;
+        height: 228px;
+        object-fit: contain;
+        align-self: center;
+      }
+
+      h3 {
+        font-weight: 300;
+        font-size: 15px;
+        color: rgba(63, 63, 64, 1);
+      }
+
+      .product_price {
+        display: flex;
+        flex-direction: column;
+        margin-top: 12px;
+        .old-price {
+          font-weight: 400;
+          font-size: 16px;
+          color: rgba(128, 128, 128, 1);
+          text-decoration: line-through;
+        }
+
+        .price {
+          font-weight: 700;
+          font-size: 20px;
+          color: rgba(63, 63, 64, 1);
+          margin-top: 2px;
+        }
+      }
+
+      span {
+        font-weight: 400;
+        font-size: 12px;
+        color: rgba(63, 63, 64, 1);
+      }
+
+      .free-shipping {
+        font-weight: 400;
+        font-size: 12px;
+        color: $blue;
+        margin-top: 7px;
+      }
+
+      button {
+        background-color: $blue;
+        border-radius: 4px;
+        width: 275.85px;
+        height: 44px;
+        color: $white;
+        border: none;
+        font-weight: 700;
+        font-size: 14px;
+        text-transform: uppercase;
+        margin-top: 12px;
+      }
+    }
+  }
+}
