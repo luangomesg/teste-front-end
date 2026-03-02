@@ -6,7 +6,10 @@ import toolsIcon from "../../assets/icons/ferramentas 1.svg";
 import healthIcon from "../../assets/icons/cuidados-de-saude 1.svg";
 import sportIcon from "../../assets/icons/corrida 1.svg";
 import fashionIcon from "../../assets/icons/moda 1.svg";
+import logoBrand from "../../assets/images/logoBrands.svg";
 import ProductsCarousel from "../ProductsCarousel";
+import Partners from "../Partners";
+
 export function Main() {
   return (
     <main className="main">
@@ -87,7 +90,70 @@ export function Main() {
         <ProductsCarousel />
       </section>
 
-      <section className="Partners"></section>
+      <section className="partners">
+        <Partners />
+      </section>
+
+      <section className="products">
+        <h2 className="products_title">Produtos relacionados</h2>
+        <span>Ver todos</span>
+        <ProductsCarousel />
+      </section>
+
+      <section className="partners">
+        <Partners />
+      </section>
+
+      <section className="brands">
+        <h2>Navegue por marcas</h2>
+
+        <ul>
+          <li>
+            <img src={logoBrand} alt="Logo da marca Econverse" />
+          </li>
+          <li>
+            <img src={logoBrand} alt="Logo da marca Econverse" />
+          </li>
+          <li>
+            <img src={logoBrand} alt="Logo da marca Econverse" />
+          </li>
+          <li>
+            <img src={logoBrand} alt="Logo da marca Econverse" />
+          </li>
+          <li>
+            <img src={logoBrand} alt="Logo da marca Econverse" />
+          </li>
+        </ul>
+      </section>
+
+      <section className="products">
+        <h2 className="products_title">Produtos relacionados</h2>
+        <span>Ver todos</span>
+        <ProductsCarousel />
+      </section>
+
+      <section className="newsletter">
+        <div className="newsletter_text">
+          <h2>Inscreva-se na nossa newsletter</h2>
+          <p>
+            Assine a nossa newsletter e receba as novidades e conteúdos
+            exclusivos da Econverse.
+          </p>
+        </div>
+
+        <form className="newsletter_form">
+          <div className="form_top">
+            <input type="text" placeholder="Digite seu nome" />
+            <input type="email" placeholder="Digite seu e-mail" />
+            <button>INSCREVER</button>
+          </div>
+
+          <div className="form_bottom">
+            <input type="checkbox" />
+            <p>Aceito os termos e condições</p>
+          </div>
+        </form>
+      </section>
     </main>
   );
 }

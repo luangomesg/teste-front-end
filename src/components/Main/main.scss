@@ -175,4 +175,127 @@
       line-height: 16px;
     }
   }
+
+  span {
+    font-weight: 700;
+    font-size: 15px;
+    color: $dark-gray;
+  }
+}
+
+.partners {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 90px;
+}
+
+.brands {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 90px;
+
+  h2 {
+    font-weight: 700;
+    font-size: 30px;
+    color: $blue;
+    margin-bottom: 32px;
+  }
+
+  ul {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+    gap: 42px;
+
+    li {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 211px;
+      height: 211px;
+      border-radius: 50%;
+      box-shadow: 0px 7px 20px 0px rgba(0, 0, 0, 0.13);
+    }
+  }
+}
+
+.newsletter {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 162px;
+  background-color: $purple;
+  margin-top: 90px;
+
+  .newsletter_text {
+    margin-left: 80px;
+    h2 {
+      font-family: "Outfit", sans-serif;
+      font-weight: 600;
+      font-size: 32px;
+      color: $white;
+      line-height: 120%;
+    }
+
+    p {
+      font-weight: 300;
+      font-size: 14px;
+      color: $white;
+      width: 515px;
+      height: 36px;
+      margin-top: 8px;
+    }
+  }
+
+  .newsletter_form {
+    display: flex;
+    margin-inline: auto;
+    flex-direction: column;
+    margin-right: 82px;
+
+    .form_top {
+      display: flex;
+      gap: 8px;
+
+      input {
+        width: 233px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 18px;
+        color: #676767;
+        padding-left: 24px;
+        border: 1px solid #e7e7e7;
+        border-radius: 7px;
+      }
+
+      button {
+        background-color: $yellow;
+        border-radius: 8px;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 12px;
+        color: #161615;
+        padding: 15px 40px;
+      }
+    }
+
+    .form_bottom {
+      display: flex;
+      margin-top: 8px;
+
+      p {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 150%;
+        color: $white;
+        padding-left: 4px;
+      }
+    }
+  }
 }
