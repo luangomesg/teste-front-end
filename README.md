@@ -27,7 +27,7 @@ git clone https://github.com/luangomesg/teste-front-end.git
 Entre na pasta do projeto:
 
 ```bash
-cd econverse
+cd teste-front-end
 ```
 
 Instale as dependências:
@@ -50,22 +50,6 @@ O projeto estará disponível em:
 
 ```
 http://localhost:5173
-```
-
----
-
-## 🏗️ Build de produção
-
-Para gerar a versão de produção:
-
-```bash
-npm run build
-```
-
-Para visualizar a build:
-
-```bash
-npm run preview
 ```
 
 ---
