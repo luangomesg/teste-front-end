@@ -10,6 +10,7 @@
   .carousel_viewport {
     overflow: hidden;
     width: 1268px;
+    padding-left: 5px;
   }
 
   .arrow_left {
@@ -267,5 +268,51 @@
     font-size: 14px;
     border: none;
     text-transform: uppercase;
+  }
+
+  @media (max-width: 1380px) {
+    .carousel_viewport {
+      width: 945px;
+    }
+  }
+
+  @media (max-width: 1055px) {
+    .carousel_viewport {
+      width: 630px;
+    }
+  }
+
+  @media (max-width: 740px) {
+    .carousel_viewport {
+      width: 310px;
+    }
+  }
+
+  @media (max-width: 500px) {
+    .arrow_left {
+      display: none;
+    }
+
+    .arrow_right {
+      display: none;
+    }
+
+    .carousel_viewport {
+      overflow-x: auto;
+      scroll-behavior: smooth;
+      scroll-snap-type: x mandatory;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: none;
+      padding-left: 3px;
+    }
+
+    .carousel_viewport::-webkit-scrollbar {
+      display: none;
+    }
+
+    .product_card {
+      flex: 0 0 auto;
+      scroll-snap-align: start;
+    }
   }
 }

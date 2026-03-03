@@ -9,11 +9,19 @@ import hearthIcon from "../../assets/icons/Heart.svg";
 import userIcon from "../../assets/icons/UserCircle.svg";
 import cartIcon from "../../assets/icons/ShoppingCart.svg";
 import crowIcon from "../../assets/icons/CrownSimple.svg";
+import { useState } from "react";
+
 export function Header() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  function toggleMenu() {
+    setIsMenuOpen((prev) => !prev);
+  }
+
   return (
     <header className="header">
       <div className="container">
-        <div className="top-bar">
+        <section className="top-bar">
           <ul className="top-bar_list">
             <li>
               <img src={shield} alt="" aria-hidden="true" />
@@ -35,9 +43,20 @@ export function Header() {
               </p>
             </li>
           </ul>
-        </div>
+        </section>
 
-        <div className="main-header">
+        <section className="main-header">
+          <div className="main-button">
+            <button
+              className={`menu-button ${isMenuOpen ? "active" : ""}`}
+              onClick={toggleMenu}
+              aria-label="Abrir menu"
+            >
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+          </div>
           <div className="main-header_image">
             <img src={econverseHeader} alt="Logo Econverse" />
           </div>
@@ -71,9 +90,31 @@ export function Header() {
               </li>
             </ul>
           </div>
-        </div>
+        </section>
 
-        <div className="bottom-bar">
+        {isMenuOpen && (
+          <section className="mobile-menu">
+            <ul>
+              <li>
+                <img src={hearthIcon} aria-hidden="true" />
+                Favoritos
+              </li>
+              <li>
+                <img src={userIcon} alt="" aria-hidden="true" />
+                Usuário
+              </li>
+              <li>
+                <img src={cartIcon} alt="" aria-hidden="true" />
+                Carrinho
+              </li>
+              <li>
+                <img src={boxIcon} alt="" aria-hidden="true" /> Entregues
+              </li>
+            </ul>
+          </section>
+        )}
+
+        <section className="bottom-bar">
           <ul>
             <li>
               <p>Todas Categorias</p>
@@ -90,7 +131,7 @@ export function Header() {
               Assinatura
             </li>
           </ul>
-        </div>
+        </section>
       </div>
     </header>
   );

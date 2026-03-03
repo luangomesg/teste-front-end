@@ -12,9 +12,32 @@ export default function ProductsWrapper() {
   const gap = 18;
   const totalCardWidth = cardWidth + gap;
   const [page, setPage] = useState(0);
-  const itemsPerPage = 4;
+  const [itemsPerPage, setItemsPerPage] = useState(4);
   const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
   const [quantity, setQuantity] = useState(1);
+
+  useEffect(() => {
+    function handleResize() {
+      if (window.innerWidth <= 768) {
+        setItemsPerPage(1);
+        setPage(0);
+      } else if (window.innerWidth <= 1055) {
+        setItemsPerPage(2);
+        setPage(0);
+      } else if (window.innerWidth <= 1380) {
+        setItemsPerPage(3);
+        setPage(0);
+      } else {
+        setItemsPerPage(4);
+        setPage(0);
+      }
+    }
+
+    handleResize();
+    window.addEventListener("resize", handleResize);
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, [itemsPerPage]);
 
   function handleNext() {
     if ((page + 1) * itemsPerPage < products.length) {

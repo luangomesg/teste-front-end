@@ -9,6 +9,7 @@
 body {
   font-family: $font-primary;
   background-color: $white;
+  overflow-x: hidden;
 }
 
 button,
@@ -25,6 +26,10 @@ select {
   max-width: 1280px;
   height: 100%;
   margin-inline: auto;
+
+  @media (max-width: 915px) {
+    height: auto;
+  }
 }
 
 button {
