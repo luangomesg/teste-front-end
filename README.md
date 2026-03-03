@@ -1,31 +1,75 @@
-# Teste Econverse: Vaga Desenvolvedor Front-End
+# 🛍️ Econverse
 
-### Vem ser #Econverse!
+Projeto de e-commerce desenvolvido com React + TypeScript.
 
-Segue abaixo as instruções para a execução do teste.
+O objetivo do projeto é simular uma loja virtual moderna com listagem de produtos, carrossel, modal de detalhes.
 
-## Instruções
-- Faça um fork desse projeto para a sua conta pessoal do GitHub.
-- Desenvolva a página conforme as **Especificações Técnicas** 
-- Crie um README com as instruções para compilar, testar e rodar o projeto.
-- O link do repositório deverá ser enviado para o e-mail ana.nascimento@econverse.com.br com o título **Teste Vaga FrontEnd**
+---
 
-## Especificações Técnicas
-- Desenvolver a pagina em React e TypeScript conforme o [layout](https://www.figma.com/file/rWnzPeoxgynuNPsJjV0VmV/Teste-Front-End-Jr?node-id=0%3A1). Para conseguir pegar os elementos do Figma, basta copiar o layout para sua conta que terá acesso de edição.
-- Montar a [vitrine](https://app.econverse.com.br/teste-front-end/junior/tecnologia/layout/vitrine-produtos.png) de produtos consumindo as informações dos produtos em json atraves desse [Link](https://app.econverse.com.br/teste-front-end/junior/tecnologia/lista-produtos/produtos.json).
-- Desenvolver a interação ao clicar em um produto conforme layout. A interação consiste em abrir um modal com as principais informações do produto presente no arquivo [JSON](https://app.econverse.com.br/teste-front-end/junior/tecnologia/lista-produtos/produtos.json) conforme o produto que clicar.
-- Utilizar Pré-processador Sass, Less ou Stylus.
-- Respeitar o Layout pixel a pixel, tamanho das fontes, cores e botões.
-- Não Utilizar bibliotecas UI como Bootstrap, Foundation, ou afins.
+## 🚀 Tecnologias utilizadas
 
-## Pontos Extras
-- Utilizar Boas práticas de SEO
-- Uso de HTML semântico
+- React
+- TypeScript
+- SCSS
+- Vite
+- API externa para listagem de produtos
 
-## O que avaliaremos em seu teste
-- Organização do projeto
-- Lógica do código
-- Componentização
-- Alcance dos objetivos propostos
+---
 
-**Boa sorte! ;)**
+## 📦 Instalação
+
+Clone o repositório:
+
+```bash
+git clone https://github.com/luangomesg/teste-front-end.git
+```
+
+Entre na pasta do projeto:
+
+```bash
+cd econverse
+```
+
+Instale as dependências:
+
+```bash
+npm install
+```
+
+---
+
+## ▶️ Rodando o projeto
+
+Para iniciar em ambiente de desenvolvimento:
+
+```bash
+npm run dev
+```
+
+O projeto estará disponível em:
+
+```
+http://localhost:5173
+```
+
+---
+
+## 🏗️ Build de produção
+
+Para gerar a versão de produção:
+
+```bash
+npm run build
+```
+
+Para visualizar a build:
+
+```bash
+npm run preview
+```
+
+---
+
+## 📄 Licença
+
+Este projeto foi desenvolvido para fins de estudo e avaliação técnica.
